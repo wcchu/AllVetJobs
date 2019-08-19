@@ -24,6 +24,7 @@ h2 {
 }
 
 h3 {
+    font-size: 200%;
     color: red;
 }
 
@@ -51,4 +52,30 @@ h3 {
 
 .content p {
     text-align: justify;
+}
+
+table {
+    margin: 30px auto;
+    width: 70%;
+    table-layout: fixed;
+}
+
+th,
+td {
+    /* border: 1px solid; */
+    padding: 5px 25px;
+}
+
+th {
+    background-color: lightyellow;
+}
+
+td {
+    background-color: white;
+    vertical-align: top;
+}
+
+table ion-icon {
+    font-size: 100px;
+    padding: 10px;
 }
