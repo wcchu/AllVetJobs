@@ -9,10 +9,10 @@ header {
 
 .header-text-box {
     position: absolute;
-    width: 1140px;
+    width: 800px;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    left: 10%;
+    transform: translate(0, -50%);
 }
 
 .header-text-box h1 {
