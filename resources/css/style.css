@@ -36,10 +36,11 @@ html {
     position: fixed;
     z-index: 1;
     overflow-x: hidden;
-    background-color: orange;
+    background-color: darkcyan;
 }
 
 .topbar p {
+    color: white;
     text-align: center;
     font-size: 22px;
     width: 800px;

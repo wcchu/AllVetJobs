@@ -19,10 +19,6 @@ ul {
     padding-left: 25px;
 }
 
-h2 {
-    color: rgb(26, 44, 92);
-}
-
 h3 {
     font-size: 200%;
     color: red;
@@ -55,6 +51,7 @@ h3 {
 }
 
 table {
+    color: darkcyan;
     margin: 30px auto;
     width: 70%;
     table-layout: fixed;
@@ -62,20 +59,14 @@ table {
 
 th,
 td {
-    /* border: 1px solid; */
     padding: 5px 25px;
 }
 
-th {
-    background-color: lightyellow;
-}
-
 td {
-    background-color: white;
     vertical-align: top;
 }
 
 table ion-icon {
-    font-size: 100px;
+    font-size: 20px;
     padding: 10px;
 }
