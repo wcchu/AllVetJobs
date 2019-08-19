@@ -1,0 +1,81 @@
+.main {
+    padding: 50px 0 0 0;
+}
+
+h1 {
+    margin: 30px;
+    text-align: center;
+    font-weight: 300;
+}
+
+p,
+h2,
+h3,
+ul {
+    margin: 20px auto;
+}
+
+ul {
+    padding-left: 25px;
+}
+
+h2 {
+    color: rgb(26, 44, 92);
+}
+
+h3 {
+    font-size: 200%;
+    color: red;
+}
+
+.member {
+    width: 800px;
+    height: 180px;
+    margin: 20px auto;
+}
+
+.member img {
+    float: left;
+    height: 180px;
+    border-radius: 90px;
+}
+
+.member p {
+    padding: 60px 0 0 200px;
+}
+
+.content {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 0 20px 0;
+}
+
+.content p {
+    text-align: justify;
+}
+
+table {
+    margin: 30px auto;
+    width: 70%;
+    table-layout: fixed;
+}
+
+th,
+td {
+    /* border: 1px solid; */
+    padding: 5px 25px;
+}
+
+th {
+    background-color: lightyellow;
+}
+
+td {
+    background-color: white;
+    vertical-align: top;
+}
+
+table ion-icon {
+    font-size: 100px;
+    padding: 10px;
+}
