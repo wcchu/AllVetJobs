@@ -1,6 +1,7 @@
 header {
-    background-image: url(img/cover.jpg);
-    background-color: orange;
+    background-image:
+        url(img/high-tatras.jpg),
+        linear-gradient(to right, rgb(120, 120, 120), rgb(120, 120, 120), white);
     background-blend-mode: multiply;
     background-size: cover;
     background-position: center;
@@ -17,15 +18,15 @@ header {
 
 .header-text-box h1 {
     margin: 0 30px;
-    color: white;
-    font-size: 80px;
+    color: cyan;
+    font-size: 90px;
     font-weight: 300;
     font-style: italic;
 }
 
 .header-text-box h2 {
     margin: 0 60px;
-    color: orange;
+    color: white;
     font-size: 40px;
     font-weight: 350;
 }
