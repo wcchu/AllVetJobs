@@ -1,4 +1,4 @@
-# All Vet Jobs
+# AllVetJobs
 
-All Vet Jobs website design
+AllVetJobs website design
 Preview: https://wcchu.github.io/AllVetJobs/html/home.html
