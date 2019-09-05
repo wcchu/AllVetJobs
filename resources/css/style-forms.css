@@ -1,0 +1,35 @@
+.main {
+    padding: 50px 0 0 0;
+}
+
+h1 {
+    margin: 30px;
+    text-align: center;
+    font-weight: 300;
+}
+
+h2 {
+    color: darkblue;
+}
+
+p,
+h2,
+h3,
+ul {
+    margin: 20px auto;
+}
+
+ul {
+    padding-left: 25px;
+}
+
+.content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 0 20px 0;
+    line-height: 200%;
+}
+
+.content p {
+    text-align: justify;
+}

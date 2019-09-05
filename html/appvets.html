@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="../vendors/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="../resources/css/style.css">
+    <link rel="stylesheet" type="text/css" href="../resources/css/style-forms.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
+    <title>AllVetJobs - Application form for vets</title>
+</head>
+
+<body>
+
+    <div class="topbar">
+        <p>
+            <a href="home.html">Home</a> &nbsp;
+            <a href="about.html">About</a> &nbsp;
+            <a href="forvets.html">For Vets</a> &nbsp;
+            <a href="forclinics.html">For Clinics</a> &nbsp;
+            <a href="contact.html">Contact</a>
+        </p>
+    </div>
+
+    <div class="main">
+
+        <h1>Questions for Veterinarians</h1>
+
+        <div class="content">
+
+            <form action="index.php" name="vet_app" method="POST">
+                <h2>Basic background information</h2>
+
+                <ol>
+                    <li>First name*: <input type="text" name="firstname">
+                        Middle name: <input type="text" name="middlename">
+                        <br>
+                        Last name*: <input type="text" name="lastname">
+                    </li>
+                    <li>Address: <input type="text" name="address" size="50"></li>
+                    <li>Phone number*: <input type="text" name="phonenumber">
+                        <input type="radio" name="phonetype" value="home">Home &nbsp;
+                        <input type="radio" name="phonetype" value="cell">Cell &nbsp;
+                        <input type="radio" name="phonetype" value="work">Work</li>
+                    <li>Email address*: <input type="text" name="emailaddress" size="25"></li>
+                    <li>Which vet school did you attend? <input type="text" name="vetschool" size="25">
+                        <br>
+                        Graduation year
+                        <input type="text" name="gradyear"></li>
+                    <li>Are you a foreign graduate?
+                        <input type="radio" name="foreign" value="yes">Yes &nbsp;
+                        <input type="radio" name="foreign" value="no">No
+                        <br>
+                        If yes, did you complete any US certification program (ECFVG, PAVE)?
+                        Which one and when? <input type="text" name="certprog" size="50"></li>
+                    <li>Did you complete any internships? When, where and which kind? <input type="text"
+                            name="internship" size="50"></li>
+                    <li>Advanced degrees and/or board certifications?* <input type="text" name="advanced" size="50">
+                    </li>
+                    <li>How many years have you been practicing excluding internship?* <input type="text"
+                            name="yearspracticing"></li>
+                    <li>Who is your current employer? <input type="text" name="employer" size="25">
+                        <br>
+                        What is your current position? <input type="text" name="position"></li>
+                    <li>In which states are you licensed?* <input type="text" name="state"></li>
+                    <li>Are you willing to relocate?* <input type="radio" name="relocate" value="yes">Yes &nbsp;
+                        <input type="radio" name="relocate" value="no">No
+                        <br>
+                        If yes, indicate where <input type="text" name="relocatewhere"></li>
+                    <li>What is the best time for a phone call/consultation?* <input type="text"
+                            name="consultation_time"></li>
+                </ol>
+
+                <h2>Professional background information</h2>
+
+                <ol>
+                    <li>Which types of clinics have you worked in?
+                        <ul>
+                            <li>
+                                Independent GP clinic <input type="checkbox" name="past_gp" value="associate">Associate
+                                &nbsp;
+                                <input type="checkbox" name="past_gp" value="owner">Owner/partner
+                            </li>
+                            <li>
+                                Specialty clinic <input type="checkbox" name="past_special" value="associate">Associate
+                                &nbsp;
+                                <input type="checkbox" name="past_special" value="owner">Owner/partner
+                            </li>
+                            <li>
+                                Medium or large corporations <input type="checkbox" name="past_corp"
+                                    value="associate">Associate
+                                &nbsp;
+                                <input type="checkbox" name="past_corp" value="management">Management position
+                                &nbsp;
+                                <input type="checkbox" name="past_corp" value="owner">Owner/partner
+                            </li>
+                            <li>Others: <input type="text" name="past_others"></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        For the next position, which type of clinic would you prefer to work in?
+                        <ul>
+                            <li>
+                                Independent GP clinic <input type="radio" name="next" value="gp_associate">Associate
+                                &nbsp;
+                                <input type="radio" name="next" value="gp_owner">Owner/partner
+                            </li>
+                            <li>
+                                Specialty clinic <input type="radio" name="next" value="special_associate">Associate
+                                &nbsp;
+                                <input type="radio" name="next" value="special_owner">Owner/partner
+                            </li>
+                            <li>
+                                Medium or large corporations <input type="radio" name="next"
+                                    value="corp_associate">Associate
+                                &nbsp;
+                                <input type="radio" name="next" value="corp_manager">Management position
+                                &nbsp;
+                                <input type="radio" name="next" value="corp_owner">Owner/partner
+                            </li>
+                            <li><input type="radio" name="next" value="others">Others: <input type="text"
+                                    name="next_others"></li>
+
+                            <li><input type="radio" name="next" value="doesnt_matter">It doesn't matter</li>
+                        </ul>
+                    </li>
+
+                    <li>Are you especially interested in certain fields? e.g. immunology, surgery, etc. <input
+                            type="text" name="interest" size="50"></li>
+                    <br>
+
+                    <li>How are your hands-on ability?
+                        <ul>
+                            <li>Surgical/US/dental experience <input type="text" name="surgical_us_dental"></li>
+                            <li>Blood draw/catheter placement <input type="text" name="blood_draw_catheter_placement">
+                            </li>
+                            <li>E-tube, feeding tube <input type="text" name="e_tube_feeding_tube"></li>
+                            <li>U cath placement <input type="text" name="u_cath_placement"></li>
+                        </ul>
+                    </li>
+
+                    <li>What are your responsibilities in your current position? (Comfort level 0-5, 0 being not at all
+                        comfortable and 5 being very confident)
+
+                        <ul>
+                            <li><input type="text" name="routine_preventive" size="1"> Routine preventive care, client
+                                education</li>
+                            <li><input type="text" name="clinical_pathology" size="1"> Clinical pathology/ cytology</li>
+                            <li><input type="text" name="diagnostic_imaging" size="1"> Diagnostic imaging</li>
+                            <li><input type="text" name="routine_surgery" size="1"> Routine surgery</li>
+                            <li><input type="text" name="orthopedic_surgery" size="1"> Orthopedic surgery</li>
+                            <li><input type="text" name="chronic_disease" size="1"> Chronic disease management</li>
+                            <li><input type="text" name="emergency_surgery" size="1"> Emergency surgery</li>
+                            <li><input type="text" name="critical_care" size="1"> Critical care</li>
+                            <li><input type="text" name="anesthesia_monitor" size="1"> Anesthesia monitor</li>
+                        </ul>
+                    </li>
+
+                    <li>What are your management responsibilities?
+
+                        <input type="checkbox" name="management" value="scheduling">scheduling (other doctors,
+                        techs) &nbsp;
+                        <input type="checkbox" name="management" value="training">Training (interns, techs) &nbsp;
+                        <input type="checkbox" name="management" value="mentoring">Mentoring &nbsp;
+                        <input type="checkbox" name="management" value="inventory">Inventory/bookkeeping &nbsp;
+                        <input type="checkbox" name="management" value="community">Community outreach &nbsp;
+                        <input type="checkbox" name="management" value="marketing">Marketing &nbsp;
+                    </li>
+
+                    <li>What are your current salary and benefits?
+
+                        <ul>
+                            <li>Base salary: <input type="text" name="salary"></li>
+                            <li>Commision <input type="text" name="commision"></li>
+                            <li>Benefits
+                                <input type="checkbox" name="benefit" value="health">Health &nbsp;
+                                <input type="checkbox" name="benefit" value="dental">Dental &nbsp;
+                                <input type="checkbox" name="benefit" value="vision">Vision &nbsp;
+                                <input type="checkbox" name="benefit" value="401k">401(k) &nbsp;
+                                <input type="checkbox" name="benefit" value="life_insurance">Life insurance &nbsp;
+                                <input type="checkbox" name="benefit" value="short_term_disability">Short term
+                                disability &nbsp;
+                                <input type="checkbox" name="benefit" value="long_term_disability">Long term
+                                disability &nbsp;
+                                <input type="checkbox" name="benefit" value="ce_allowance">CE allowance &nbsp;
+                                <input type="checkbox" name="benefit" value="paid_time_off">Paid time off for
+                                CE &nbsp;
+                                <input type="checkbox" name="benefit" value="maternity_leave">Maternity leave &nbsp;
+                            </li>
+                            <li>What are your current working hours? <input type="text" name="work_hours"></li>
+                        </ul>
+                    </li>
+
+                </ol>
+
+                <h2>Your wishlist</h2>
+
+                <ol>
+                    <li>
+                        Why are you leaving your current position? what are you looking for in the next position that
+                        is lacking in your current position? <br>
+                        <input type="text" name="wish_position" size="65">
+                    </li>
+                    <li>
+                        Are you willing to relocate? If yes, what are you looking for in your next location? <br>
+                        <input type="text" name="wish_relocation" size="65">
+                    </li>
+                    <li>
+                        What is your ideal working time per week? Weekends? On call? <br>
+                        <input type="text" name="wish_work_time" size="65">
+                    </li>
+                    <li>
+                        What is your maximum acceptable commute time? <br>
+                        <input type="text" name="wish_commute" size="65">
+                    </li>
+                    <li>
+                        What are your salary, PTO and benefit expectations? <br>
+                        <input type="text" name="wish_salary" size="65">
+                    </li>
+                    <li>
+                        Do you have any promotion or ownership interest or expectations? <br>
+                        <input type="text" name="wish_promotion" size="65">
+                    </li>
+                    <li>
+                        When would you be able to start the new position? <br>
+                        <input type="text" name="wish_start" size="65">
+                    </li>
+                    <li>
+                        Please describe your ideal workplace. e.g. doctor to tech ratio, equipment, responsibilities,
+                        appointment time, support system, etc. <br>
+                        <input type="text" name="wish_workplace" size="65">
+                    </li>
+                    <li>
+                        Off the top of your head, are there any companies that you would like to and not like to work
+                        for? Why? <br>
+                        <input type="text" name="wish_company" size="65">
+                    </li>
+                    <li>
+                        Do you have questions or comments for future clinic? <br>
+                        <input type="text" name="wish_questions" size="65">
+                    </li>
+                </ol>
+
+                <h2>Additional comments</h2>
+
+                <textarea rows="5" cols="30"></textarea>
+                <br>
+
+                <br>
+                <input type="submit" value="Submit" />
+            </form>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

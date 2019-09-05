@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="../vendors/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="../resources/css/style.css">
+    <link rel="stylesheet" type="text/css" href="../resources/css/style-forms.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
+    <title>AllVetJobs - Application form for clinics</title>
+</head>
+
+<body>
+
+    <div class="topbar">
+        <p>
+            <a href="home.html">Home</a> &nbsp;
+            <a href="about.html">About</a> &nbsp;
+            <a href="forvets.html">For Vets</a> &nbsp;
+            <a href="forclinics.html">For Clinics</a> &nbsp;
+            <a href="contact.html">Contact</a>
+        </p>
+    </div>
+
+    <div class="main">
+
+        <h1>Questions for Clinics</h1>
+
+        <div class="content">
+
+            <form action="index.php" name="clinic_app" method="POST">
+                <ol>
+                    <li>
+                        How experienced should the veterinarian be to qualify for this position? <br>
+                        <input type="radio" name="how_experienced" value="new_grad">New grad &nbsp;
+                        <input type="radio" name="how_experienced" value="1_3_years">1-3 years &nbsp;
+                        <input type="radio" name="how_experienced" value="3_7_years">3-7 years &nbsp;
+                        <input type="radio" name="how_experienced" value="7_plus_years">7+ years &nbsp;
+                        <input type="radio" name="how_experienced" value="doesnt_matter">Doesn't matter
+                    </li>
+
+                    <li>
+                        Which type of clinic is this position in? <br>
+                        <input type="radio" name="clinic_type" value="new_grad">Small GP clinic &nbsp;
+                        <input type="radio" name="clinic_type" value="1_3_years">Specialty clinic (which department?
+                        <input type="text" name="clinic_dept">)
+                        &nbsp;
+                        <input type="radio" name="clinic_type" value="3_7_years">Medium or larger corporation
+                    </li>
+
+                    <li>
+                        Special ability? Surgical/US experience. Blood draw/catheter placement and other small
+                        procedures. Are these abilities a must? <br>
+                        <input type="text" name="special_ability" size="65">
+                    </li>
+
+                    <li>
+                        Relocation compensation? <br>
+                        <input type="text" name="relocation_compensation" size="65">
+                    </li>
+
+                    <li>
+                        Average working hours per week? Weekends? On call? <br>
+                        <input type="text" name="hours_per_week" size="65">
+                    </li>
+
+                    <li>
+                        Salary and PTO? <br>
+                        <input type="text" name="salary_pto" size="65">
+                    </li>
+
+                    <li>
+                        Promotion or ownership potential/possibilities. <br>
+                        <input type="text" name="promotion" size="65">
+                    </li>
+
+
+                    <li>
+                        How does your company communicate with clients? How do you prefer your veterinarian to commute
+                        with your clients? Scenario: <br>
+                        <input type="text" name="communicate" size="65">
+                    </li>
+
+                    <li>
+                        Describe your team atmosphere/dynamics? Scenario: <br>
+                        <input type="text" name="atmosphere" size="65">
+                    </li>
+
+
+                    <li>
+                        Questions for future associate? <br>
+                        <input type="text" name="questions" size="65">
+                    </li>
+                </ol>
+
+                <br>
+                <input type="submit" value="Submit" />
+            </form>
+
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
